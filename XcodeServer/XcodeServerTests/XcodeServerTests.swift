@@ -22,8 +22,7 @@ class XcodeServerTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssertTrue(3 + 4 == 7, "result should be 7")
     }
     
     func testPerformanceExample() {
