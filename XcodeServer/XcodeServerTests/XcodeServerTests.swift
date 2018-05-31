@@ -25,6 +25,10 @@ class XcodeServerTests: XCTestCase {
         XCTAssertTrue(3 + 4 == 7, "result should be 7")
     }
     
+    func testExample1() {
+        XCTAssertTrue(3 + 4 == 8, "result should be 7")
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
