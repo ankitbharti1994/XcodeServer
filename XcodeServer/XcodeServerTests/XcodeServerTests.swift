@@ -13,20 +13,25 @@ class XcodeServerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        XCTAssertTrue(3 + 4 == 7, "result should be 7")
+    func testAdditionCalculation()  {
+        let result = Utility.calculate(6, 7, op: .add)
+        XCTAssertEqual(result, 13, "addition of two number should be 13")
     }
     
-    func testExample1() {
-        XCTAssertTrue(5 - 1 == 4, "result should be 4")
+    func testSubtractionCalculation()  {
+        let result = Utility.calculate(6, 7, op: .subtraction)
+        XCTAssertEqual(result, -1, "subtraction of two number should be -1")
+    }
+    
+    func testMultiplicationCalculation()  {
+        let result = Utility.calculate(6, 7, op: .multiplication)
+        XCTAssertEqual(result, 42, "multiplication of two number should be 42")
     }
     
     func testPerformanceExample() {
